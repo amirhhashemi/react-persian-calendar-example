@@ -84,7 +84,7 @@ function App() {
         {days.map((day, dayIdx) => (
           <div
             key={day.toString()}
-            className={cx("py-2", dayIdx === 0 && colStartClasses[getDay(day)])}
+            className={cx("py-2 flex items-center justify-center", dayIdx === 0 && colStartClasses[getDay(day)])}
           >
             <button
               type="button"
